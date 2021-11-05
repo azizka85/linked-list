@@ -3,7 +3,7 @@ export class ListItem<T> {
   protected next: ListItem<T>;
   
   constructor(
-    public data: T,
+    data: T,
     root?: ListItem<T>
   );
 
@@ -16,7 +16,7 @@ export class ListItem<T> {
 }
 
 export class LinkedList<T> implements Iterable<ListItem<T>> {
-  protected count = 0;
+  protected count;
   
   root?: ListItem<T>;  
 
